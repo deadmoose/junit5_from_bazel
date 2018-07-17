@@ -1,0 +1,20 @@
+options:
+  languages: [ "java" ]
+  licenses: [ "notice" ]
+  thirdPartyDirectory: "third_party/java"
+  transitivity: runtime_deps
+  versionConflictPolicy: highest
+
+dependencies:
+  org.junit.jupiter:
+    junit-jupiter:
+      lang: java
+      version: "5.0.3"
+      modules: [ "api", "engine", "params" ]
+
+  org.junit.platform:
+    junit-platform:
+      lang: java
+      version: "1.0.3"
+      modules: [ "launcher", "runner" ]
+
